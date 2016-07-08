@@ -4,7 +4,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 // endbower
 
 
-@import url(https://fonts.googleapis.com/css?family=Oswald|Sonsie+One|Cantarell:400,400italic);
+@import url(https://fonts.googleapis.com/css?family=Cantarell|Oswald|Signika);
 
 /*
 Saved Fonts
@@ -12,12 +12,14 @@ Saved Fonts
 
 
 */
+
+.sign{
+  font-family:'Signika',sans-serif;
+}
 .oswald{
   font-family:'Oswald', sans-serif;
 }
-.sons{
-  font-family:'Sonsie One', cursive;
-}
+
 .cant{
   font-family:'Cantarell', sans-serif;
 }
@@ -119,10 +121,11 @@ text-shadow: #000 0px 0px 2px, #000 0px 0px 2px, #000 0px 0px 2px, #000 0px 0px 
 
 .serverDeals {
   height:25vh;
-  border-radius:3px;
-  border:3px solid black;
-  .serverName {
   
+  border-right:4px solid black;
+  text-align:right;
+  .serverName {
+    border-bottom:3px solid black;
   }
   .serverBandwidth {
   
@@ -132,10 +135,12 @@ text-shadow: #000 0px 0px 2px, #000 0px 0px 2px, #000 0px 0px 2px, #000 0px 0px 
 
   .boxesHeight {
    height:20%;
-      border:8px solid black;   
-    border-radius:2px;
-    background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGElEQVQYlWNgIAFIIWE6AyksmM5W0xkAAP4wAQXI8iBuAAAAAElFTkSuQmCC)repeat,#7F7F7F;
-
+    padding-top:5%;
+    
+    border-bottom:1px solid black;
+    font-size:1.1em;
+    /*background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGElEQVQYlWNgIAFIIWE6AyksmM5W0xkAAP4wAQXI8iBuAAAAAElFTkSuQmCC)repeat,#7F7F7F;
+*/
   }
 
 }
@@ -146,11 +151,91 @@ text-shadow: #000 0px 0px 2px, #000 0px 0px 2px, #000 0px 0px 2px, #000 0px 0px 
 box-shadow: 0px -34px 45px 14px rgba(0,0,0,0.75);
 position:relative;
 z-index:30;
-
+background:#CCCBCC;
 
 }
 .imageShadow{
   -webkit-box-shadow: inset 3px 50px 45px -27px rgba(0,0,0,0.75);
 -moz-box-shadow: inset 3px 50px 45px -27px rgba(0,0,0,0.75);
 box-shadow: inset 3px 50px 45px -27px rgba(0,0,0,0.75);
+}
+.footerLink {
+  color:white;
+  font-size:1.3em;
+
+}
+
+.deskMainLinks {
+  font-size:1.4em;
+  border-bottom:1px solid white;
+  padding-top:5%;
+  cursor:pointer;
+  text-align:right;
+  a {
+    color:white;
+
+  }
+
+}
+.deskMobileLinks{
+  font-size:1.4em;
+  padding-top:5%;
+  cursor:pointer;
+  text-align:right;
+  a{
+    color:white;
+    position:relative;
+    top:50%;
+  }
+}
+.deskMainLinks:hover {
+  background:#fff;
+  color:#000;
+  a{
+    color:black;
+  }
+}
+.deskSocialLink {
+  float:right;
+  height:5vh;
+  margin-bottom:1%;
+  color:white;
+
+  a {
+    color:white;
+  }
+  a:hover{
+    color:black;
+  }
+}
+
+.navMenuStyle {
+  height:10vh;
+  padding:0;
+  background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAD0lEQVQImWNgIAdsIl0LACPfALMKIGQTAAAAAElFTkSuQmCC)repeat,#28374A;
+  color:white;
+  padding:0;
+}
+
+.hostShadow{
+-webkit-box-shadow: 43px 1px 19px -14px rgba(5,5,5,1);
+-moz-box-shadow: 43px 1px 19px -14px rgba(5,5,5,1);
+box-shadow: 43px 1px 19px -14px rgba(5,5,5,1);
+}
+
+.hostShadoww{
+-webkit-box-shadow: 0px 1px 76px 20px rgba(5,5,5,1);
+-moz-box-shadow: 0px 1px 76px 20px rgba(5,5,5,1);
+box-shadow: 0px 1px 76px 20px rgba(5,5,5,1);
+}
+
+.hostHigh {
+  background:rgba(0,0,0,0.3);
+  color:white;
+}
+
+.hiddenBack {
+  background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGklEQVQYlWNgwA58cYiTr5BOwJdh8LmJLAAAVT4BNUGrjV4AAAAASUVORK5CYII=)repeat;
+  border:1px none;
+  border-radius:8%;
 }

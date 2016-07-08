@@ -1,40 +1,40 @@
 <div id=''class=''style=''>
 
 	<!-- DESKTOP -->
-	<div id=''class='hidden-sm hidden-xs col-md-12 col-lg-12'style='padding:0;background:#28374A'>
-		<div id=''class='col-md-12 col-lg-12'style='height:10vh;padding:0;background:#28374A;color:white;padding:0;'>
-			<div id=''class='col-md-4'style='height:75%;padding:1$;'>
-				<img src="images/atabyte.png" class='col-md-12'style='height:100%;'/>
+	<div id=''class='hidden-sm hidden-xs col-md-12 col-lg-12 oswald'style='padding:0;position:relative;z-index:900;'>
+		<div id=''class='col-md-12 col-lg-12 navMenuStyle'style=''>
+			<div id=''class='col-md-4'style='height:75%;'>
+				<a ng-href='#/'><img src="images/atabyte.png" class='col-md-12'style='height:100%;'/></a>
 			
 			</div>
 			<div id=''class='col-md-6'style='float:right;height:75%;'>
-				<div id=''class='col-md-2 col-md-offset-6'style='height:100%;padding:1%;'>
-					Services
+				<div id=''class='col-md-2 col-md-offset-6 deskMainLinks 'style='height:100%;;'>
+					<a ng-href='#/hosts'class=''style=''>Services  </a>
 				
 				</div>
-				<div id=''class='col-md-2'style='height:100%;padding:1%;'>
-					Domains
+				<div id=''class='col-md-2 deskMainLinks 'style='height:100%;;'>
+					<a ng-href='#/domain'class=''style=''>Domains  </a>
 				
 				</div>
-				<div id=''class='col-md-2'style='height:100%;padding:1%;'>
-					Data Centers
+				<div id=''class='col-md-2 deskMainLinks 'style='height:100%;;'>
+					<a ng-href='#/centers'class=''style=''>Data Centers  </a>
 				
 				</div>
 			
 			</div>
-			<div id=''class='col-md-12'style='height:25%;padding:0;background:#223740'>
+			<div id=''class='col-md-12'style='height:25%;padding:0;background:#223740;font-size:1.1em;'>
 					
 				<div id=''class='col-md-2'style='height:100%;'>
 					Client Login
 				</div>
-				<div id=''class='col-md-5'style='height:100%;float:right;'>
-					<div id=''class='col-md-6'style=''>
-						Email Us
+				<div id=''class='col-md-5'style='height:100%;float:right;padding:0;'>
+					<div id=''class='col-md-6'style='text-align:right;'>
+						<a href='mailTo:support@Atabyte.net'>Email Us</a>
 					
 					</div>
-					<div id=''class='col-md-6'style=''>
-						<span class='col-md-4'>Call</span>
-						<span class='col-md-8'>+1-777-777-7777</span>
+					<div id=''class='col-md-6'style='text-align:right;'>
+						Call
+						+1-777-777-7777
 					
 											
 					
@@ -47,8 +47,38 @@
 	</div>
 
 	<!-- MOBILE -->
-	<div id=''class='hidden-md hidden-lg'style=''>
-	
+	<div id=''class='hidden-md hidden-lg oswald'style='position:relative;z-index:60;'>
+		<div id=''class='col-xs-12 navMenuStyle'style=''>
+			<div id=''class='col-xs-9'style='height:100%;;'>
+				<a ng-href='#/'><img src='images/atabyte.png'class='col-xs-12'style=''/></a>
+			
+			</div>
+			<div id=''class='col-xs-3'style=';height:100%;text-align:center;'ng-click='mobileDisplay = !mobileDisplay'>
+				<span class='col-xs-12'style='font-size:1.2em;'>Menu</span>
+				<span class='glyphicon glyphicon-align-justify'style='font-size:2.3em;'></span>
+			</div>
+			<div ng-if='mobileDisplay == true' id=''class='col-xs-12'style=';height:100vh;padding:0;'ng-click='mobileDisplay = false'>
+				<div id=''class='col-xs-8'style='height:40%;background:#fff;float:right;background:#223740;padding:0;'>
+					<div id=''class='deskMobileLinks'style='height:33.33%;border-bottom:1px solid white;padding:2%;font-size:2.0em;'>
+					
+						<a ng-href='#/hosts'class='col-xs-12'style='height:100%;'>Services</a>
+					</div>
+					<div id=''class='deskMobileLinks'style='height:33.33%;border-bottom:1px solid white;padding:2%;font-size:2.0em;'>
+						<a ng-href='#/domain'class='col-xs-12'style='height:100%;'>Domains</a>
+					
+					</div>
+					<div id=''class='deskMobileLinks'style='height:33.33%;padding:2%;font-size:2.0em;'>
+						<a ng-href='#/centers'class='col-xs-12'style='height:100%;'>Data Centers</a>
+					
+					</div>
+				
+				</div>
+			
+			
+			</div>
+
+
+		</div>
 	
 	</div>
 

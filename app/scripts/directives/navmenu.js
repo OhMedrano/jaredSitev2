@@ -12,7 +12,7 @@ angular.module('jaredv2App')
       templateUrl:'templates/navMenu.html',
       restrict: 'E',
       link: function postLink(scope, element, attrs) {
-
+      		scope.mobileDisplay = false;
       }
     };
   });

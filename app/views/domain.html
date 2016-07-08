@@ -1,1 +1,93 @@
-<p>This is the domain view.</p>
+<div id=''class=''style=''>
+
+	<!-- DESKTOP -->
+	<div id=''class='hidden-sm hidden-xs'style=''>
+		<div parallax-background parallax-ratio='1'id=''class='col-md-12 col-lg-12 'style='padding:0;height:60vh;background:url(images/wallpaper/stock1.png)no-repeat;background-size:cover;padding-top:9%;'>
+			<div id=''class='col-md-8 col-md-offset-2 hiddenBack'style='height:20vh;'>
+				<div id=''class='col-md-12'style='height:100%;padding-top:3%;font-size:1.6em;'>
+					<div id=''class='col-md-6 col-md-offset-1 oswald'style=''>
+					<input type='text' class='col-md-12'ng-model='domCheck.name'placeholder='Check if your domain is available'>
+					
+					</div>
+					<div id=''class='col-md-1 oswald'style='padding:0;'>
+						<div id=''class='dropdown col-md-12'style=''>
+							<button class='btn btn-default dropdown-toggle'type='button'id='dropdownMenu1'data-toggle='dropdown'style='font-size:1.0em;'><span ng-if='domCheck.suff == "none";'>.com</span> <span ng-if='domCheck.suff != "none"'>{{domCheck.suff}}</span><span class='caret'></span></button>
+							<div id=''class='dropdown-menu'style=''>
+								<div ng-repeat='suff in domainSuffix'id=''class=''style=''ng-click='domCheck.suff = suff'>
+									{{suff}}
+								
+								
+								</div>
+							
+							</div>
+						</div>
+					
+					</div>
+					<div id=''class='col-md-2 oswald'style=''>
+						<button type="button" class="btn btn-primary" ng-model="singleModel" uib-btn-checkbox btn-checkbox-true="1" btn-checkbox-false="0" style='background:#000;border-color:#000;font-size:1.0em;'>
+       						Check availabilty
+   						 </button>
+					
+					</div>
+
+
+
+					<div id=''class='col-md-12 oswald'style='color:white;font-size:2.0em;font-weight:bold;text-align:right;'>
+						<p class='col-md-7'>Great domain prices starting at</p> 
+						<p class='col-md-3'style='text-align:center;'>$14.99 a year</p>
+					</div>
+				</div>
+			
+			</div>
+		
+		</div>
+		
+	</div>
+
+	<!-- MOBILE -->
+	<div id=''class='hidden-md hidden-lg'style=''>
+		<div id=''class='col-xs-12'style='padding:0;height:60vh;background:url(images/wallpaper/stock1.png)no-repeat;background-size:cover;padding-top:9%;'>
+			<div id=''class='col-xs-12 'style='height:20vh;padding:0;'>
+				<div id=''class='col-xs-12'style='height:100%;padding-top:20%;font-size:1.2em;'>
+					<div id=''class='col-xs-9 oswald'style='padding:0;margin-bottom:10%;'>
+					<input type='text' class='col-xs-12'ng-model='domCheck.name'placeholder='Check if your domain is available'>
+					
+					</div>
+					<div id=''class='col-xs-2 oswald'style='padding:0;'>
+						<div id=''class='dropdown col-xs-12'style=''>
+							<button class='btn btn-default dropdown-toggle'type='button'id='dropdownMenu1'data-toggle='dropdown'style='font-size:1.0em;'><span ng-if='domCheck.suff == "none";'>.com</span> <span ng-if='domCheck.suff != "none"'>{{domCheck.suff}}</span><span class='caret'></span></button>
+							<div id=''class='dropdown-menu'style=''>
+								<div ng-repeat='suff in domainSuffix'id=''class=''style=''ng-click='domCheck.suff = suff'>
+									{{suff}}
+								
+								
+								</div>
+							
+							</div>
+						</div>
+					
+					</div>
+					<div id=''class='col-xs-4 col-xs-offset-3 oswald'style='margin-bottom:10%;'>
+						<button type="button" class="btn btn-primary" ng-model="singleModel" uib-btn-checkbox btn-checkbox-true="1" btn-checkbox-false="0" style='background:#000;border-color:#000;font-size:1.0em;'>
+       						Check availabilty
+   						 </button>
+					
+					</div>
+
+
+
+					<div id=''class='col-xs-12 oswald'style='color:white;font-size:1.1em;font-weight:bold;text-align:right;'>
+						<p class='col-xs-12'>Great domain prices starting at</p> 
+						<p class='col-xs-12'style='text-align:center;'>$14.99 a year</p>
+					</div>
+				</div>
+			
+			</div>
+		
+				
+		</div>
+	
+	</div>
+
+
+</div>

@@ -9,9 +9,12 @@
  */
 angular.module('jaredv2App')
   .controller('DomainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+   
+  	$scope.domainSuffix = ['.com','.net','.biz','.org','.me','.mobi','.us'];
+  	$scope.domCheck = {
+  				name:'',
+  				suff:'none'
+
+  			};
+
   });

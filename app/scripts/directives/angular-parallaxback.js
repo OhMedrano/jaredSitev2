@@ -14,13 +14,13 @@ angular.module('jaredv2App')
     template: '<div ng-transclude></div>',
     scope: {
       parallaxRatio: '@',
-      parallaxVerticalOffset: '@',
+      parallaxVertical: '@',
     },
     link: function($scope, elem, attrs) {
       var setPosition = function () {
-        var calcValY = (elem.prop('offsetTop') - $window.pageYOffset) * ($scope.parallaxRatio ? $scope.parallaxRatio : 1.1) - ($scope.parallaxVerticalOffset || 0);
+        var calcValY = (elem.prop('offsetTop') - $window.pageYOffset) * ($scope.parallaxRatio ? $scope.parallaxRatio : 0.8) - ($scope.parallaxVertical || 0);
         // horizontal positioning
-        elem.css('background-position', "50% " + calcValY + "px");
+        elem.css('background-position', "20% " + calcValY + "px");
       };
 
       // set our initial position - fixes webkit background render bug
