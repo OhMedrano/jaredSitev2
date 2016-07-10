@@ -62,4 +62,10 @@ angular.module('jaredv2App')
     				
     			}
     ];
+
+
+    $scope.logoImages = ['aboveNet','att','cogent','level3','qwest','steadfast','verzion'];
+
+    
+
   });
