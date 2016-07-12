@@ -91,50 +91,173 @@ body {
 }
 
 /* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 730px;
-
-    .whiteTextBox {
-      height:100vh;
-    }
-
-    
-  }
-
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
-}
-.mainDeskImageOne {
-
-    height:80vh;padding:0;
-  
-
-
-}
-.frontHead {
-  color: #FF7F17;
-font-size: 300%;
-font-weight: 500;
-text-shadow: #000 0px 0px 2px, #000 0px 0px 2px, #000 0px 0px 2px, #000 0px 0px 2px, #000 0px 0px 2px, #000 0px 0px 2px, #000 0px 0px 2px, #000 0px 0px 2px, #000 0px 0px 2px;
-}
-
+@media screen and (min-width:1280px) {
+      .dataCenterStyle {
+        background:#000;
+        width:25%;
+        float:left;
+        text-align:left;
+      }
 .serverDeals {
+    width:121%;
+    height:30vh;
+  }
+  .boxesHeight {
+    font-size:0.8em;
+    padding:1%;
+    margin-bottom:2%;
+  }
+
+
+  .parallaxPic {
+   
+    padding:0;
+    overflow:hidden;
+    
+    }
+    .hiddenImageLarge {
+      display:none;
+    }
+    .hiddenImageSmall {
+      display:inline;
+    }
+.centerDeskImageOne{
+  padding:0;height:60vh;
+}
+.centerDeskImageTwo {
+  height:100vh;
+} 
+.centerDeskImageThree {
+
+  height:100vh;
+}
+.navDeskLinks {
+
+  font-size:0.7em;
+
+  }
+  .serverDeals {
   height:25vh;
+  width:100%;
+  border-right:4px solid black;
+  text-align:right;
+  .serverName {
+    border-bottom:3px solid black;
+  }
+  .serverBandwidth {
   
+
+  }
+
+
+  .boxesHeight {
+   height:20%;
+    padding-top:5%;
+    
+    border-bottom:1px solid black;
+    font-size:0.9em;
+    /*background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGElEQVQYlWNgIAFIIWE6AyksmM5W0xkAAP4wAQXI8iBuAAAAAElFTkSuQmCC)repeat,#7F7F7F;
+*/
+  }
+
+}
+#mainDeskBoxOne{
+  height:90vh;
+}
+}
+
+
+
+@media screen and (min-width:1440px) {
+  #mainDeskBoxOne{
+  height:70vh;
+}
+  .parallaxPic {
+   
+    padding:0;
+    overflow:hidden;
+    
+    }
+    .hiddenImageLarge {
+      display:none;
+    }
+    .hiddenImageSmall {
+      display:inline;
+    }
+.centerDeskImageOne{
+  padding:0;height:60vh;
+}
+.centerDeskImageTwo {
+  height:110vh;
+} 
+.centerDeskImageThree {
+
+  height:110vh;
+}
+.navDeskLinks {
+
+  font-size:0.7em;
+
+  }
+ .serverDeals {
+  height:25vh;
+  width:100%;
+  border-right:4px solid black;
+  text-align:right;
+  .serverName {
+    border-bottom:3px solid black;
+  }
+  .serverBandwidth {
+  
+
+  }
+
+
+  .boxesHeight {
+   height:20%;
+    padding-top:5%;
+    
+    border-bottom:1px solid black;
+    font-size:0.9em;
+    /*background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGElEQVQYlWNgIAFIIWE6AyksmM5W0xkAAP4wAQXI8iBuAAAAAElFTkSuQmCC)repeat,#7F7F7F;
+*/
+  }
+
+}
+}
+
+
+@media screen and (min-width:1920px) {
+#mainDeskBoxOne{
+  height:70vh;
+}
+.parallaxPic {
+
+    height:60vh;padding:0;
+  
+
+
+}
+ .hiddenImageLarge {
+      display:inline;
+    }
+    .hiddenImageSmall {
+      display:none;
+    }
+.centerDeskImageOne{
+  padding:0;height:60vh;
+}
+.centerDeskImageTwo {
+  height:80vh;
+} 
+.navDeskLinks {
+
+  font-size:1.1em;
+
+  }
+  .serverDeals {
+  height:25vh;
+  width:100%;
   border-right:4px solid black;
   text-align:right;
   .serverName {
@@ -157,6 +280,17 @@ text-shadow: #000 0px 0px 2px, #000 0px 0px 2px, #000 0px 0px 2px, #000 0px 0px 
   }
 
 }
+}
+
+
+.frontHead {
+  color: #FF7F17;
+font-size: 300%;
+font-weight: 500;
+text-shadow: #000 0px 0px 2px, #000 0px 0px 2px, #000 0px 0px 2px, #000 0px 0px 2px, #000 0px 0px 2px, #000 0px 0px 2px, #000 0px 0px 2px, #000 0px 0px 2px, #000 0px 0px 2px;
+}
+
+
 
 .whiteTextBox {
 -webkit-box-shadow: 0px -34px 45px 14px rgba(0,0,0,0.75);
