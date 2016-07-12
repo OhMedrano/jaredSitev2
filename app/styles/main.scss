@@ -94,6 +94,12 @@ body {
 @media screen and (min-width: 768px) {
   .container {
     max-width: 730px;
+
+    .whiteTextBox {
+      height:100vh;
+    }
+
+    
   }
 
   /* Remove the padding we set earlier */
@@ -111,6 +117,13 @@ body {
   .jumbotron {
     border-bottom: 0;
   }
+}
+.mainDeskImageOne {
+
+    height:80vh;padding:0;
+  
+
+
 }
 .frontHead {
   color: #FF7F17;

@@ -8,18 +8,25 @@
 			
 			</div>
 			<div id=''class='col-md-6'style='float:right;height:75%;'>
-				<div id=''class='col-md-2 col-md-offset-6 deskMainLinks 'style='height:100%;;'>
-					<a ng-href='#/hosts'class=''style=''>Services  </a>
+				<a ng-href='#/hosts'class=''style='color:white;'>
+					<div id=''class='col-md-2 col-md-offset-6 deskMainLinks 'style='height:100%;;'>
+					Services  
 				
-				</div>
-				<div id=''class='col-md-2 deskMainLinks 'style='height:100%;;'>
-					<a ng-href='#/domain'class=''style=''>Domains  </a>
+					</div>
+				</a>
+
+				<a ng-href='#/domain'class=''style='color:white;'>
+					<div id=''class='col-md-2 deskMainLinks 'style='height:100%;;'>
+					Domains  
 				
-				</div>
-				<div id=''class='col-md-2 deskMainLinks 'style='height:100%;;'>
-					<a ng-href='#/centers'class=''style=''>Data Centers  </a>
+					</div>
+				</a>
+				<a ng-href='#/centers'class=''style='color:white;'>
+					<div id=''class='col-md-2 deskMainLinks 'style='height:100%;;'>
+						Data Centers 
 				
-				</div>
+					</div>
+				 </a>
 			
 			</div>
 			<div id=''class='col-md-12'style='height:25%;padding:0;background:#223740;font-size:1.1em;'>
@@ -57,17 +64,17 @@
 				<span class='col-xs-12'style='font-size:1.2em;'>Menu</span>
 				<span class='glyphicon glyphicon-align-justify'style='font-size:2.3em;'></span>
 			</div>
-			<div ng-if='mobileDisplay == true' id=''class='col-xs-12'style=';height:100vh;padding:0;'ng-click='mobileDisplay = false'>
+			<div ng-if='mobileDisplay == true' id=''class='col-xs-12'style=';height:100vh;padding:0;'>
 				<div id=''class='col-xs-8'style='height:40%;background:#fff;float:right;background:#223740;padding:0;'>
-					<div id=''class='deskMobileLinks'style='height:33.33%;border-bottom:1px solid white;padding:2%;font-size:2.0em;'>
+					<div id=''class='deskMobileLinks'style='height:33.33%;border-bottom:1px solid white;padding:2%;font-size:2.0em;'ng-click='mobileDisplay = false;'>
 					
 						<a ng-href='#/hosts'class='col-xs-12'style='height:100%;'>Services</a>
 					</div>
-					<div id=''class='deskMobileLinks'style='height:33.33%;border-bottom:1px solid white;padding:2%;font-size:2.0em;'>
+					<div id=''class='deskMobileLinks'style='height:33.33%;border-bottom:1px solid white;padding:2%;font-size:2.0em;'ng-click='mobileDisplay = false;'>
 						<a ng-href='#/domain'class='col-xs-12'style='height:100%;'>Domains</a>
 					
 					</div>
-					<div id=''class='deskMobileLinks'style='height:33.33%;padding:2%;font-size:2.0em;'>
+					<div id=''class='deskMobileLinks'style='height:33.33%;padding:2%;font-size:2.0em;'ng-click='mobileDisplay = false;'>
 						<a ng-href='#/centers'class='col-xs-12'style='height:100%;'>Data Centers</a>
 					
 					</div>

@@ -10,4 +10,12 @@
 angular.module('jaredv2App')
   .controller('HostsCtrl', function ($scope,servDeals,$routeParams) {
    $scope.servers = servDeals.query({serverId: $routeParams.serverId});
+
+
+   $scope.selIndex = 1;
+   $scope.changeServ = function(call){
+   		$scope.selIndex = call;
+   		console.log(call);
+   		console.log($scope.selIndex);
+   }
   });
